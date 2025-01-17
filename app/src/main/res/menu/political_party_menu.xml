@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/party_1" android:title="Party 1" />
+    <item android:id="@+id/party_2" android:title="Party 2" />
+    <item android:id="@+id/party_3" android:title="Party 3" />
+    <item android:id="@+id/party_4" android:title="Party 4" />
+</menu>

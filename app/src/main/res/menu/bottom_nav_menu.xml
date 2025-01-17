@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon"
+        android:iconTint="@color/black"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/dashbord_icon"
+        android:iconTint="@color/black"
+        android:title="@string/files" />
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/bell"
+        android:iconTint="@color/black"
+        android:title="@string/Notification" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile_icon"
+        android:iconTint="@color/black"
+        android:title="@string/profile" />
+</menu>

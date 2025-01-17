@@ -1,0 +1,47 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Success Icon -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sucess_image"
+        android:layout_marginBottom="16dp" />
+
+        <!-- Description Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Got It Button -->
+        <Button
+            android:id="@+id/gotItButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Got It"
+            android:background="@drawable/buttion_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
