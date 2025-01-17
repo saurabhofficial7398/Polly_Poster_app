@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".Activity.Activity.Social_Media_Detail_Edit_Activity">
+        <LinearLayout
+            android:id="@+id/header_section"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#6A1B9A"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Social Media Detail"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_below="@id/header_section"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_section"
+                android:orientation="vertical">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/imageViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center" />
+
+                <!-- Dots Indicator -->
+                <LinearLayout
+                    android:id="@+id/dotsIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp">
+                </LinearLayout>
+            </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp">
+
+                    <!-- Left Icon -->
+                    <ImageView
+                        android:id="@+id/changefont_icon"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/changefont"
+                        android:contentDescription="select_political_party_icon" />
+                    <View
+                        android:id="@+id/changefont_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/changefont_icon"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/black" />
+                    <!-- Dropdown Text -->
+                    <TextView
+                        android:id="@+id/Designation_dropdown_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/changefont_icon"
+                        android:layout_toStartOf="@id/Designation_ico"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="change the font"
+                        android:textSize="16sp" />
+
+                    <!-- Right Dropdown Icon -->
+                    <ImageView
+                        android:id="@+id/Designation_ico"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/baseline_arrow_drop_down_24"
+                        android:contentDescription="select_dropdown_icon" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp">
+
+                    <!-- Left Icon -->
+                    <ImageView
+                        android:id="@+id/change_color_font_icon"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/changefont"
+                        android:contentDescription="select_political_party_icon" />
+                    <View
+                        android:id="@+id/change_color_font_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/change_color_font_icon"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/black" />
+                    <!-- Dropdown Text -->
+                    <TextView
+                        android:id="@+id/change_color_font_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/change_color_font_icon"
+                        android:layout_toStartOf="@id/change_color_font_ico"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="change the color font"
+                        android:textSize="16sp" />
+
+                    <!-- Right Dropdown Icon -->
+                    <ImageView
+                        android:id="@+id/change_color_font_ico"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/baseline_arrow_drop_down_24"
+                        android:contentDescription="select_dropdown_icon" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp">
+
+                    <!-- Left Icon -->
+                    <ImageView
+                        android:id="@+id/change_the_size_font_icon"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/changefontcolor"
+                        android:contentDescription="select_political_party_icon" />
+                    <View
+                        android:id="@+id/change_the_size_font_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/change_the_size_font_icon"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/black" />
+                    <!-- Dropdown Text -->
+                    <TextView
+                        android:id="@+id/change_the_size_font_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/change_the_size_font_icon"
+                        android:layout_toStartOf="@id/change_the_size_font_ico"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="change the size  font"
+                        android:textSize="16sp" />
+
+                    <!-- Right Dropdown Icon -->
+                    <ImageView
+                        android:id="@+id/change_the_size_font_ico"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/baseline_arrow_drop_down_24"
+                        android:contentDescription="select_dropdown_icon" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp">
+
+                    <!-- Left Icon -->
+                    <ImageView
+                        android:id="@+id/change_the_font_style_icon"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/changefontstyle"
+                        android:contentDescription="select_political_party_icon" />
+                    <View
+                        android:id="@+id/change_the_font_style_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/change_the_font_style_icon"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/black" />
+                    <!-- Dropdown Text -->
+                    <TextView
+                        android:id="@+id/change_the_font_style_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/change_the_font_style_icon"
+                        android:layout_toStartOf="@id/change_the_font_style_ico"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="change the   font style"
+                        android:textSize="16sp" />
+
+                    <!-- Right Dropdown Icon -->
+                    <ImageView
+                        android:id="@+id/change_the_font_style_ico"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/baseline_arrow_drop_down_24"
+                        android:contentDescription="select_dropdown_icon" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/textview_background"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp">
+
+                    <!-- Left Icon -->
+                    <ImageView
+                        android:id="@+id/change_the_font_icon"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/changethefont"
+                        android:contentDescription="select_political_party_icon" />
+                    <View
+                        android:id="@+id/change_the_font_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/change_the_font_icon"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/black" />
+                    <!-- Dropdown Text -->
+                    <TextView
+                        android:id="@+id/change_the_font_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/change_the_font_icon"
+                        android:layout_toStartOf="@id/change_the_font_ico"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center_vertical"
+                        android:text="change the  font "
+                        android:textSize="16sp" />
+
+                    <!-- Right Dropdown Icon -->
+                    <ImageView
+                        android:id="@+id/change_the_font_ico"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/baseline_arrow_drop_down_24"
+                        android:contentDescription="select_dropdown_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="16dp">
+
+                    <!-- "Share the same with" Text -->
+                    <TextView
+                        android:id="@+id/share_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="share the same with"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <!-- Social Media Icons -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/share_text"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <!-- Facebook Icon -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/fb"
+                            android:contentDescription="Facebook Icon" />
+
+                        <!-- Instagram Icon -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/ins"
+                            android:contentDescription="Instagram Icon" />
+
+                        <!-- Twitter Icon -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/downlode"
+                            android:contentDescription="Downlode Icon" />
+
+                        <!-- WhatsApp Icon -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/twitt"
+                            android:contentDescription="Twitter Icon" />
+
+                        <!-- More Options Icon -->
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/whastapp"
+                            android:contentDescription="whatsapp Icon" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:src="@drawable/other"
+                            android:contentDescription="More Options Icon" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/app_background_color"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- "Next" Button -->
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttion_background"
+                android:text="SUBMIT"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_gravity="end" />
+        </LinearLayout>
+</RelativeLayout>
