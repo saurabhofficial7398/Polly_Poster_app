@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Activity.Fragment.Profile_Fragment">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/logout_button"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile Header Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@drawable/profile_card_background"
+                android:elevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Profile Picture -->
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/man"
+                    android:background="@drawable/profile_picture_background"
+                    android:padding="8dp" />
+
+                <!-- Account Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAME OF THE ACCOUNT"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#BBHS8965740"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+91 9763500291"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Total Profile Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total profile"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/profile_item_background"
+                    android:layout_margin="8dp" />
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/profile_item_background"
+                    android:layout_margin="8dp" />
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/profile_item_background"
+                    android:layout_margin="8dp" />
+
+                <FrameLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/add_button_background"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/add"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/profile_card_background"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+<!--<Button-->
+<!--        android:id="@+id/logout_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Logout My Profile"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@color/red"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_margin="16dp" />-->
+
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="6dp"
+        app:area_margin="4dp"
+        app:animation_duration="250"
+        app:outer_color="@color/gray"
+        app:inner_color="@color/white"
+        app:border_radius="2dp"
+        app:text="Swipe to Logout "
+        android:layout_alignParentBottom="true"
+        app:text_size="12sp"
+        app:slider_height="80dp"
+        app:slider_locked="false"
+        app:bounce_on_start="true" />
+</RelativeLayout>
