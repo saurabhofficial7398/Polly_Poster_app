@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Poli_Poster"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.Activity.Creat_An_Account"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Loder_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.CircularLoaderView"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Loder"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Festivals_clicked_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Today_Special_Clicked_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Search_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Dashbord"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Editors_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Social_Media_Detail_Edit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Social_Media_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Profile_Basic_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Re_Enter_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Otp_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Reset_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Activity.Spleaash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
