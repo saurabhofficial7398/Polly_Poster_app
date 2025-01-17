@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <size android:width="24dp" android:height="8dp"/> <!-- Rectangle size -->
+    <solid android:color="@color/app_background_color" /> <!-- Selected dot color -->
+    <corners android:radius="4dp"/> <!-- Rounded corners -->
+</shape>
